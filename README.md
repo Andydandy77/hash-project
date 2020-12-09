@@ -42,6 +42,32 @@ return h(word) % capacity;
 
 ## Test Driver
 
+The test driver prompts the user for the file name and then prints the hash table's initial bucket capacity.
+Then after adding all the unique words to the hash table it prints out the word statistics (unique, total, load factor)
+After that it prints the final bucket capacity after all words have been added and resizings.
+It then prompts the user to enter words separated by space to get the number of occurrences of each word in the txt file.
+
+It looks something like this 
+
+```
+What is the filename: ../files/alice-full.txt
+Initial capacity: 11
+Word counter statistics: 
+	unique:       2521
+	total:        8989
+	load:         0.613
+final capacity: 4111
+
+Enter words (separated by space): alice rabbit-hole little waistcoatpocket
+Analysis of words:
+	alice: 385
+	rabbit-hole: 3
+	little: 127
+	waistcoatpocket: 1
+```
+  
+  
+
 
 
 
